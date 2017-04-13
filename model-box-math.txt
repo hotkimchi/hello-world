@@ -1,0 +1,21 @@
+#div {
+  height:150px;
+  width:400px;
+  margin:20px;
+  border:1px solid red;
+  padding: 10px;
+  }
+  ~Because margin, border and padding are all set to the same value top, right, bottom, left...
+  For total width:
+    (margin*2)+(border*2)+(padding*2)+width = total width
+    (20*2)+(1*2)+(10*2)+400 = 462
+  For total height:
+    (margin*2)+(border*2)+(padding*2)+height = total height
+    (20*2)+(1*2)+(10*2)+150 = 212
+  ~Browser calculated seems to not include the margin of the div, so take away margin from the total width and height
+  For Browser calculated width:
+    total width - margin width = Browser Calulated width
+    462-40 = 422
+  And with Browser calculated height:
+    total height - margin height = Browser Calulated height
+    212-40 = 172
